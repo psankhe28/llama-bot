@@ -11,7 +11,7 @@ class MessageParser {
     this.msgQ = this.msgQ + customMsg;
 
     // Make a request to your local server
-    const responseFromServer = await fetch('http://localhost:5000/api/chat', {
+    const responseFromServer = await fetch('https://llama-bot-75qx.onrender.com/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
